@@ -1,17 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.bytesgo</groupId>
+		<artifactId>bytesgo-parent</artifactId>
+		<version>7</version>
+	</parent>
 	<groupId>com.github.leeyazhou</groupId>
 	<artifactId>manus4j-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Manus4j Parent</name>
+	<description>Manus4j</description>
+	<url>git@github.com:${github.org}/${github.repo}.git</url>
+	<organization>
+		<name>manus4j</name>
+		<url>git@github.com:${github.org}/${github.repo}.git</url>
+	</organization>
 	<modules>
 		<module>manus4j</module>
 	</modules>
+	<scm>
+		<connection>scm:git:git@github.com:${github.org}/${github.repo}.git</connection>
+		<developerConnection>
+			scm:git:git@github.com:${github.org}/${github.repo}.git</developerConnection>
+		<tag>HEAD</tag>
+		<url>git@github.com:${github.org}/${github.repo}.git</url>
+	</scm>
+	<issueManagement>
+		<system>github-issue</system>
+		<url>https://github.com/${github.org}/${github.repo}/issues</url>
+	</issueManagement>
 	<properties>
+		<github.org>leeyazhou</github.org>
+		<github.repo>manus4j</github.repo>
 		<mcp.version>0.13.1</mcp.version>
+		<junit.version>5.13.4</junit.version>
+		<netty.version>4.2.6.Final</netty.version>
+		<spring.ai.version>1.1.0-M2</spring.ai.version>
+		<jdk.version>17</jdk.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -22,6 +51,35 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<dependency>
+				<groupId>org.junit</groupId>
+				<artifactId>junit-bom</artifactId>
+				<version>${junit.version}</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-bom</artifactId>
+				<version>${netty.version}</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.ai</groupId>
+				<artifactId>spring-ai-bom</artifactId>
+				<version>${spring.ai.version}</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 </project>
