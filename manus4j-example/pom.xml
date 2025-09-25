@@ -6,19 +6,15 @@
     <artifactId>manus4j-parent</artifactId>
     <version>${revision}</version>
   </parent>
-  <artifactId>manus4j</artifactId>
-  <packaging>jar</packaging>
-  <name>Manus4j</name>
+  <artifactId>manus4j-example</artifactId>
+  <name>Manus4j Example</name>
+  <description>Manus4j Example</description>
 
   <dependencies>
-
     <dependency>
-      <groupId>io.modelcontextprotocol.sdk</groupId>
-      <artifactId>mcp</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.ai</groupId>
-      <artifactId>spring-ai-client-chat</artifactId>
+      <groupId>com.github.leeyazhou</groupId>
+      <artifactId>manus4j</artifactId>
+      <version>${revision}</version>
     </dependency>
   </dependencies>
 </project>
