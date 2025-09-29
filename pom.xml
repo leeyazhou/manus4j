@@ -32,7 +32,7 @@
     <url>https://github.com/${github.org}/${github.repo}/issues</url>
   </issueManagement>
   <properties>
-    <flatten-maven-plugin.version>1.7.1</flatten-maven-plugin.version>
+    <flatten-maven-plugin.version>1.7.3</flatten-maven-plugin.version>
     <github.org>leeyazhou</github.org>
     <github.repo>manus4j</github.repo>
     <jdk.version>17</jdk.version>
