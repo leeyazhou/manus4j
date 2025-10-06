@@ -41,7 +41,7 @@
     <netty.version>4.2.6.Final</netty.version>
     <revision>0.0.1-SNAPSHOT</revision>
     <spotless.version>2.46.1</spotless.version>
-    <spring.ai.version>1.1.0-M2</spring.ai.version>
+    <spring.ai.version>1.1.0-M3</spring.ai.version>
   </properties>
   <dependencyManagement>
     <dependencies>
