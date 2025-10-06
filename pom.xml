@@ -37,7 +37,7 @@
     <github.repo>manus4j</github.repo>
     <jdk.version>17</jdk.version>
     <junit.version>5.13.4</junit.version>
-    <mcp.version>0.13.1</mcp.version>
+    <mcp.version>0.14.0</mcp.version>
     <netty.version>4.2.6.Final</netty.version>
     <revision>0.0.1-SNAPSHOT</revision>
     <spotless.version>2.46.1</spotless.version>
